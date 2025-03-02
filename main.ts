@@ -11,6 +11,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
         strip.clear()
         strip.show()
     } else {
+        music.play(music.tonePlayable(131, music.beat(BeatFraction.Double)), music.PlaybackMode.UntilDone)
         // 새로운 시퀀스 시작
         running = true
         current_led = 0
